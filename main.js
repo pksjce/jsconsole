@@ -15,7 +15,7 @@ var pkConsole = function(elem){
 			this._whichKey = function(event){
 				return event.keyCode? event.keyCode:event.which;
 			};
-			this._consoley = $("<input type = 'textarea' id='console'>");
+			this._consoley = $("<input type = 'textarea' placeholder='Your wish is my command' id='console'>");
 			this._autocomplete = $("<div id='autocomplete'></div>");
 			this._result = $("<ul id=results></ul>");
 			this._iframe = $("<iframe id='myframe'></iframe>");
