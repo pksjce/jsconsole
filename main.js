@@ -138,8 +138,9 @@ var pkConsole = function(elem){
 				this._autocompleteStr = this._getAutocompleteStr(autocompletelist, filter);
 				var autocompleteElem = elem.find('#autocomplete');
 				if(this._autocompleteStr !== null){
+					var jslen = js.length;
 					var filterLen = filter.length;
-					var autodistance = (filterLen)*7;
+					var autodistance = (jslen)*7;
 					autocompleteElem.css('left',  this._offset + autodistance);
 					this._autocompleteStr = this._autocompleteStr.substr(filterLen, this._autocompleteStr.length);
 					autocompleteElem.html(this._autocompleteStr);
